@@ -1,0 +1,57 @@
+oasiz_list_reader
+=================
+
+リストの更新内容を自動で読み上げます。
+
+Usage:
+------
+
+設定で、自動読み上げさせたいリストを入力してください。
+設定したリストが更新されたら、そのツイートを読み上げます。
+
+設定で、自動読み上げの ON/OFF を切り替えることが出来ます。
+
+Requirements:
+-------------
+
+- [mikoto2000/mikutter_voicetext : https://github.com/mikoto2000/mikutter_voicetext](https://github.com/mikoto2000/mikutter_voicetext)
+    - テキスト読み上げプラグイン
+
+Install:
+--------
+
+以下のコマンドをターミナルで実行し、 mikutter を再起動してください。
+[PATH_TO_MIKUTTER] は、 mikutter をインストールしたパスに置き換えて実行してください。
+
+~~~ { .sh }
+$ mkdir -p ~/.mikutter/plugin
+$ cd ~/.mikutter/plugin
+$ git clone git://github.com/mikoto2000/mikutter_voicetext.git voicetext
+$ git clone git://github.com/mikoto2000/mikutter_oasiz_list_reader.git oasiz_list_reader
+$ cd [PATH_TO_MIKUTTER]
+$ bundle install --path=vendor/bundle
+~~~
+
+Recommendation:
+---------------
+
+下記プラグインを導入すると、読み上げる内容がよりリッチになります。
+
+- [mikoto2000/mikutter_scrap_nhk_news : https://github.com/mikoto2000/mikutter_scrap_nhk_news](https://github.com/mikoto2000/mikutter_scrap_nhk_news)
+    - 投稿者が nhk_news の場合に、記事本文を読み上げるようになります。
+- [mikoto2000/mikutter_scrap_47_news : https://github.com/mikoto2000/mikutter_scrap_47_news](https://github.com/mikoto2000/mikutter_scrap_47_news)
+    - 投稿者が 47news の場合に、記事本文を読み上げるようになります。
+
+License:
+--------
+
+Copyright (C) 2014 mikoto2000
+
+This software is released under the MIT License, see LICENSE
+
+このソフトウェアは MIT ライセンスの下で公開されています。 LICENSE を参照してください。
+
+Author:
+-------
+
+mikoto2000 <mikoto2000@gmail.com>

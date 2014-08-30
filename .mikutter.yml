@@ -1,0 +1,11 @@
+---
+slug: :oasiz_list_reader
+depends:
+  mikutter: 3.0.4
+  plugin:
+      - voicetext
+      - list-event
+version: '1.0'
+author: mikoto2000
+name: oasiz_list_reader
+description: 指定したリストのツイートを読み上げる
